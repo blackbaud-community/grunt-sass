@@ -7,7 +7,7 @@ var sass = require('node-sass');
 module.exports = function (grunt) {
 	grunt.verbose.writeln('\n' + sass.info + '\n');
 
-	grunt.registerMultiTask('nodesass', 'Compile Sass to CSS', function () {
+	grunt.registerMultiTask('sass-blackbaud', 'Compile Sass to CSS', function () {
 		eachAsync(this.files, function (el, i, next) {
 			var opts = this.options({
 				precision: 10
